@@ -70,8 +70,10 @@
             border-bottom: 1px solid;
             padding-bottom: 0.5em;
             font-size: 0.8rem;
+            margin-top: 1em;
             @include breakpoint-up(medium){
                 font-size: 1rem;
+                margin-top: 0;
             }
         }
         button {
