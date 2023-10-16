@@ -74,6 +74,9 @@
         button {
             border: 1px solid $lit-border-color;
             color: $text-muted;
+            svg{
+                fill: #fff;
+            }
         }
     }
     &__div {
