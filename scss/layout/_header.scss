@@ -1,0 +1,237 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  padding-right:1em;
+  font-family: $pm-font;
+  background-color: #fff;
+  @include breakpoint-up(medium){
+    padding-right: 1em;
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+  }
+  @include breakpoint-up(large){
+    position: fixed;
+    z-index: 999;
+  }
+  .logo{
+    // width: 10em;
+    background-color: $primary;
+    border-top-right-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include breakpoint-down(small){
+      width:30%;
+    }
+    img{
+      width: 100%;
+      @include breakpoint-up(medium){
+        width: 100%;
+      }
+    }
+  }
+  .menu-bar{
+    
+    @include breakpoint-up(medium){
+      display: none;
+    }
+  }
+ .navbar{
+  display: none;
+  @include breakpoint-up(medium){
+    display: block;
+  }
+  &-top{
+    display: flex;
+    justify-content: space-between;
+    border-bottom:1px solid #f1f1f1;
+    padding-top: 0.5em;
+    &__left{
+      ul{
+        list-style: none;
+        margin: 0;
+        margin-top: 0.2em;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.3em;
+        li{
+          display: flex;
+          align-items: center;
+          gap: 0.3em;
+          svg{
+            fill: $secondary;
+            height: 0.8em;
+          }
+          a{
+            color: $text-muted;
+            font-size: 0.6rem;
+            @include breakpoint-up(large){
+              font-size: 0.8rem;
+            }
+          }
+          &:hover{
+            a{
+              color: $hash-text;
+            }
+            svg{
+              fill: $primary;
+            }
+          }
+        }
+      }
+    }
+    &__right{
+      display: none;
+      
+      @include breakpoint-up(medium){
+        cursor: context-menu;
+        display: flex;
+        align-items: center;
+        padding-right: 0.3em;
+        gap: 0.5em;
+      }
+      ul{
+        list-style: none;
+        display: flex;
+        gap: 0.4em;
+        margin: 0;
+        padding-left: 0;
+        li{
+          padding-bottom: 0;
+          svg{
+            fill: $secondary;
+          }
+          &:hover{
+           svg{
+            fill:$primary;
+            @extend .zoomAnim;
+           }
+          }
+        }
+      }
+      p{
+        margin: 0;
+        font-size: 0.8rem;
+        color: $text-muted;
+        font-weight: bold;
+        font-family: $pm-font;
+      }
+    }
+  }
+  &-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.4em 0;
+    @include breakpoint-up(large){
+      padding: 0.5em 0;
+    }
+    @include breakpoint-up(xlarge){
+      padding: 1em 0;
+    }
+    nav{
+      ul{
+        display: flex;
+        gap: 0.5em;
+        font-weight: 600;
+        @include breakpoint-up(large){
+          gap: 1.5em;
+        }
+        li{
+          a{
+            font-size: 0.9rem;
+            @include breakpoint-up(medium){
+              font-size: 0.8rem;
+            }
+            @include breakpoint-up(large){
+              font-size: 1rem;
+            }
+          }
+          &:hover{
+           a{
+            color: $primary;
+           }
+          }
+        }
+      }
+    }
+    &__right{
+      display: flex;
+      gap: 0.5em;
+    }
+    &__contact{
+      display: flex;
+      align-items: center;
+      gap: 0.5em;
+      .menu-phone-icon{
+        background-color:#FFF9CC;
+        border-radius: 50%;
+        padding: 0.5em;
+        width: 0.5em;
+        height: 0.5em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include breakpoint-up(large){
+          height: 1em;
+          width: 1em;
+        }
+        svg{
+          fill: $secondary;
+          opacity: 100%;
+        }
+      }
+      small{
+        font-size: 0.5rem;
+        @include breakpoint-up(large){
+          font-size: 0.8rem;
+        }
+      }
+      a{
+        font-size: 0.5rem;
+        color: #000;
+        font-weight: 900;
+        opacity: 70%;
+        @include breakpoint-up(large){
+          font-size: 0.8rem;
+        }
+      }
+      .menu-support{
+        display: flex;
+        flex-direction: column;
+        gap: 0.2em;
+      }
+      &:hover{
+        .menu-phone-icon{
+          background-color: $pm-lite;
+          @extend .zoomAnim;
+        }
+        svg{
+          @extend .swing;
+          fill: $primary;
+        }
+      }
+    }
+  }
+ }
+}
+.mobile-menu{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: #ffffff;
+  width: 100%;
+  margin-top: 1em;
+
+  .navbar-main{
+    
+    &__right{
+      display: none;
+    }
+    nav{
+      ul{
+        flex-direction: column;
+      }
+    }
+  }
+}

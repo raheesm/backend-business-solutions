@@ -1,0 +1,54 @@
+.hero{
+  background-size: cover;
+  height: 45vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-blend-mode: soft-light;
+  background-color: rgba(0, 0, 255, 0.178);
+
+  @include breakpoint-up(medium){
+    height: 50vh;
+  }
+  @include breakpoint-up(large){
+    height: 90vh;
+  }
+  @include breakpoint-up(xlarge){
+    height:100vh;
+  }
+ 
+  &__content{
+    color: #fff;
+    @include breakpoint-up(medium){
+      width: 50%;
+
+    }
+    @include breakpoint-up(large){
+      width:50%;
+
+    }
+    @include breakpoint-up(xlarge){
+      width:40%;
+
+    }
+    &-title-top{
+      display: flex;
+      gap: 1em;
+      p{
+        margin: 0;
+        font-weight: bold;
+        font-size: 1rem;
+        @include breakpoint-up(medium){
+        font-size: 1.5rem;
+
+      }
+    }
+    img{
+      object-fit: contain;
+    }
+  }
+  h1{
+    margin-bottom: 0;
+  }
+  }
+}

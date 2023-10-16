@@ -1,0 +1,12 @@
+.short-banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .btn{
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,74 @@
+.brands{
+    &__title{
+        position: relative;
+        background-color: #ffffff;
+        width: fit-content;
+        margin: 0 auto;
+       @extend .flex-center-row;
+        gap: 0.3em;
+        @include breakpoint-up(medium){
+            margin-bottom: 2em;
+            
+        }
+        @include breakpoint-up(large){
+           margin-bottom: 2em;
+          
+        }
+        h2{
+            font-size: 0.8rem;
+            margin: 0;
+            padding: 0;
+            width: fit-content;
+            @include breakpoint-up(medium){
+                font-size: 1.2rem;
+                
+            }
+            @include breakpoint-up(large){
+                font-size: 1.5rem;
+              
+            }
+        }
+        img{
+            filter: $pm-img;
+            object-fit: contain;
+        }
+        &::before{
+            position: absolute;
+            content: "";
+            height: 1px;
+            width: 90vw;
+            background-color: $lit-border-color;
+            z-index: -1
+            ;
+        }
+
+    }
+    &__div{
+        .swiper {
+            width: 100%;
+            height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            &-slide {
+                text-align: center;
+                font-size: 18px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 5em;
+
+                .brand-img{
+                    padding: 1em;
+                    
+                }
+                
+                img {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                  }
+              }
+          }
+    }
+}

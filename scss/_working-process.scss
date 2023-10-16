@@ -1,0 +1,174 @@
+.working-process {
+    background-image: url("../images/working-process-bg.png");
+    padding: 2.5em 0;
+    background-size: cover;
+    background-position: center center;
+    @include breakpoint-up(medium) {
+        padding: 2em 0;
+    }
+    @include breakpoint-up(large) {
+        padding: 4em 0;
+    }
+    @include breakpoint-up(xlarge) {
+        padding: 5em 0;
+    }
+    &__div {
+        @include breakpoint-up(medium) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            padding-inline: 0em;
+        }
+        @include breakpoint-up(large) {
+            grid-template-columns: repeat(4, 1fr);
+            // padding-inline:6em;
+        }
+        @include breakpoint-up(xlarge) {
+        }
+
+        .process-card {
+            text-align: center;
+            margin-bottom: 1em;
+            &:nth-child(even) {
+                .card-head {
+                    background-position: bottom center;
+                }
+                .img-circle {
+                    bottom: unset;
+                    top: 0;
+
+                    &::before{
+                        display: none;
+                    }
+
+                    &::after {
+                        position: absolute;
+                        content: attr(data-number);
+                        width: 1em;
+                        height: 1em;
+                        background-color: #fff;
+                        color: $secondary;
+                        font-size: 0.9rem;
+                        padding: 10px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        z-index: 4;
+                        top:65%;
+                        border-radius: 50%;
+                        left: 8%;
+                        @include breakpoint-up(xlarge){
+                            left: 12%;
+                        }
+                    }
+                }
+            }
+            .card-head {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-size: 4em;
+                background-repeat: no-repeat;
+                background-position: top center;
+                height: 5em;
+                position: relative;
+                margin-bottom: 0.6em;
+                @include breakpoint-up(medium) {
+                    height: 5em;
+                    background-size: 4em;
+                }
+                @include breakpoint-up(large) {
+                    height: 12em;
+                    background-size: 10em;
+                }
+                @include breakpoint-up(xlarge) {
+                    height: 16em;
+                    background-size: 13em;
+                }
+
+                .img-circle {
+                    position: absolute;
+                    bottom: 0;
+                    img {
+                        width: 6em;
+                        @include breakpoint-up(medium) {
+                            width: 6em;
+                        }
+                        @include breakpoint-up(large) {
+                            width: 14.5em;
+                        }
+                        @include breakpoint-up(xlarge) {
+                            width: 20em;
+                        }
+                    }
+
+                    &::before {
+                        position: absolute;
+                        content: attr(data-number);
+                        width: 1em;
+                        height: 1em;
+                        background-color: #fff;
+                        color: $secondary;
+                        font-size: 0.9rem;
+                        padding: 10px;
+                        z-index: 3;
+                        top: 0%;
+                        border-radius: 50%;
+                        left: 8%;
+                        @include breakpoint-up(xlarge){
+                            left: 12%;
+                        }
+                    }
+
+                    &:nth-child(even) {
+                        &:before {
+                          background-color: red; /* Set the background color for even-numbered .img-circle elements */
+                        }
+                      }
+                      &:hover{
+                        &::before{
+                            background-color: $primary;
+                        }
+                        &::after{
+                            background-color: $primary;
+                        }
+                      }
+                }
+            }
+            .card-body {
+                h3 {
+                    font-size: 1.2rem;
+                    margin-bottom: 0.5em;
+                    @include breakpoint-up(medium) {
+                        font-size: 1rem;
+                    }
+                    @include breakpoint-up(large) {
+                        font-size: 1.5rem;
+                    }
+                    @include breakpoint-up(xlarge) {
+                        font-size: 1.6rem;
+                    }
+                }
+                p {
+                    max-width: 26ch;
+                    margin: 0 auto;
+                    line-height: 1.2em;
+                    @include breakpoint-up(medium) {
+                        font-size: 0.9rem;
+                        line-height: 1.5em;
+                    }
+                    @include breakpoint-up(large) {
+                        font-size: 1.2rem;
+                    }
+                    @include breakpoint-up(xlarge) {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+            // &:hover {
+            //     .img-circle {
+            //         @extend .spin;
+            //     }
+            // }
+        }
+    }
+}

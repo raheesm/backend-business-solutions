@@ -1,0 +1,110 @@
+.recent-works {
+    
+   
+    &__div {
+        @include breakpoint-up(medium){
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+            gap: 1em;
+        }
+        @include breakpoint-up(large){
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+            gap: 3em;
+        }
+        @include breakpoint-up(xlarge){
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+            gap: 3em;
+        }
+        .work {
+            border-radius: 10px;
+            height: 10em;
+            overflow: hidden;
+            position: relative;
+            padding-bottom: 2em;
+
+            @include breakpoint-up(medium){
+                height: 16em;
+             }
+             @include breakpoint-up(large){
+                height: 16em;
+               
+             }
+
+            &__img {
+                height: 9em;
+                background-size: 14em;
+                background-repeat: no-repeat;
+                border-radius: 10px;
+                @include breakpoint-up(medium){
+                   background-size: cover;
+                   height: 12em;
+                }
+                @include breakpoint-up(large){
+                   background-size: cover;
+                   height: 15em;
+                }
+
+            }
+            &__content{
+                background-color: #fff;
+                box-shadow: $pm-shadow;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 0.5em;
+                width: 80%;
+                margin: 0 auto;
+                position: absolute;
+                inset: auto 0 auto 0;
+                bottom: 1em;
+                border-radius: 10px;
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+                @include breakpoint-up(medium){
+                    padding: 1.5em 1em;
+                  }
+                  @include breakpoint-up(large){
+                    padding: 1.4em 1.2em;
+
+                     
+                  }
+                h3{
+                    @include breakpoint-up(medium){
+                       font-size: 1rem;
+                     }
+                     @include breakpoint-up(large){
+                       font-size: 1.2rem;
+                        
+                     }
+                }
+            }
+            &__tags{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1em;
+                padding-top: 0.5em;
+                .tag{
+                    background-color: $pm-lite;
+                    padding-inline:0.2em;
+                    border-radius: 5px;
+
+                    @include breakpoint-up(medium){
+                        padding-inline:0.4em;
+
+                      }
+                      @include breakpoint-up(large){
+                        padding-inline:0.5em;
+
+                         
+                      }
+
+                    p{
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}

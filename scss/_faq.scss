@@ -1,0 +1,71 @@
+.faq {
+    @include breakpoint-up(large){
+        margin-top: 5em;
+        margin-bottom: 10em;
+    }
+    &__form {
+        padding: 2em 1em;
+        @include breakpoint-up(medium) {
+            padding: 3em 1em;
+        }
+        @include breakpoint-up(large) {
+            padding: 4em;
+            padding-bottom: 0;
+            flex: 1;
+        }
+        @include breakpoint-up(xlarge) {
+            padding: 5em;
+            padding-bottom: 0;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+           
+            input[type="text"],input[type="email"],input[type="phone"],
+            textarea {
+                background-color: #8c90a0;
+                padding: 1em;
+                border-radius: 5px;
+                border: none;
+                &::placeholder {
+                    color: #fff;
+                }
+            }
+           
+            .input-group {
+                display: flex;
+                gap: 1em;
+                flex-grow: 0;
+                input {
+                    width: 50%;
+                }
+            }
+        }
+    }
+    &__accordion{
+        padding: 2em 1em;
+        @include breakpoint-up(medium) {
+            padding: 3em 1em;
+        }
+        @include breakpoint-up(large) {
+            padding: 2em 1em;
+            flex: 1;
+        }
+        @include breakpoint-up(xlarge) {
+            padding: 3em 5em;
+        }
+        .btn{
+            margin-top:4em;
+        }
+    }
+    &__div{
+        @include breakpoint-up(large){
+            margin-bottom: 4em;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2em;
+           
+        }
+    }
+}

@@ -1,0 +1,1884 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BackEnd</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/css/main.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo"><img src="assets/images/logo.png" alt="logo"></div>
+        <div class="menu-bar" id="menu-bar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg>
+
+        </div>
+        <div class="navbar">
+            <div class="navbar-top">
+
+                <div class="navbar-top__left">
+                    <ul>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                class="w-5 h-5">
+                                <path
+                                    d="M3 4a2 2 0 00-2 2v1.161l8.441 4.221a1.25 1.25 0 001.118 0L19 7.162V6a2 2 0 00-2-2H3z" />
+                                <path
+                                    d="M19 8.839l-7.77 3.885a2.75 2.75 0 01-2.46 0L1 8.839V14a2 2 0 002 2h14a2 2 0 002-2V8.839z" />
+                            </svg>
+
+                            <a
+                                href="mailto:info@backendbusinesssolutions.com">info@info@backendbusinesssolutions.com</a>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                class="w-5 h-5">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm.75-13a.75.75 0 00-1.5 0v5c0 .414.336.75.75.75h4a.75.75 0 000-1.5h-3.25V5z"
+                                    clip-rule="evenodd" />
+                            </svg>
+
+
+                            <a href="#">Mon-Sat: 9.00am To 7.00pm</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="navbar-top__right">
+                    <p>Follow us</p>
+                    <div class="navbar-top__social-icons">
+                        <ul>
+                            <li><a href="http://facebook.com" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-facebook" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                                </svg>
+                            </a></li>
+                            <li>
+                               <a href="https://twitter.com" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-twitter" viewBox="0 0 16 16">
+                                <path
+                                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                            </svg>
+                               </a>
+                            </li>
+                            <li>
+                                <a href="https://linkedin.com" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-linkedin" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                                </svg>
+                                </a>
+                            </li>
+                            <li>
+                               <a href="https://pintrest.com" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-pinterest" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0z" />
+                            </svg>
+                               </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="navbar-main">
+                <nav>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#aboutus">About us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact-us">Contact us</a></li>
+                    </ul>
+                </nav>
+                <div class="navbar-main__right">
+                    <button class="btn btn-primary">Get a Quote <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                        </svg></button>
+                    <div class="navbar-main__contact">
+                        <div class="menu-phone-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                            </svg>
+                        </div>
+                        <div class="menu-support">
+                            <small class="text-muted">Contact for Support</small>
+                            <a href="tel:+15878159311">+1 587 815 9311</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Hero section -->
+
+        <section class="hero" style="background-image: url('assets/images/hero-img.jpg');">
+            <div class="container">
+                <div class="hero__content">
+                    <div class="hero__content-title-top">
+                        <img src="assets/images/icons/hero-icon.png" alt="number one">
+                        <p class="white">Top IT Solutions Service Team</p>
+                    </div>
+                    <h1 class="white">Accelerating your
+                        business through
+                        innovative <span class="sec-color">IT Solutions.</span> </h1>
+                    <p class="hero_desc white">
+                        Leverage agile frameworks to provide a robust synopsis for high level
+                        overviews terative approaches bring table survival.
+                    </p>
+                    <a href="#" class="btn btn-secondary">Get a Quote</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hero section end -->
+
+        <!-- Home About section -->
+
+        <section class="about" id="aboutus">
+            <div class="container">
+                <div class="about__div">
+                    <div class="about__content">
+                        <div class="title-top">
+                            <img src="assets/images/icons/heart-pulse-rate.png" alt="">
+                            <p>What is Backend Business Solutions</p>
+                        </div>
+                        <h2 class="title">A preferred software development company of world’s pioneering brands.</h2>
+                        <p class="about__desc">
+                            Bring to the table win-win survival strategies to ensure proactive domination. At the end of
+                            the day, going forward, a new normal that has evolved from operational X is on the runway.
+                        </p>
+                        <ul class="about__list list-unstyled">
+                            <li><img src="assets/images/icons/forward.png" alt="about">
+                                <p>Document the short and long term goals.</p>
+                            </li>
+                            <li><img src="assets/images/icons/forward.png" alt="about">
+                                <p>Document the short and long term goals.</p>
+                            </li>
+                            <li><img src="assets/images/icons/forward.png" alt="about">
+                                <p>Document the short and long term goals.</p>
+                            </li>
+                        </ul>
+                        <br>
+                        <button class="btn btn-outline">Know More About Us <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg></button>
+                    </div>
+                    <div class="about__img">
+                        <div class="about__img__hr">
+                            <img src="assets/images/about1.jpg" alt="about">
+                        </div>
+                        <div class="experience-box">
+                            <p class="white">Our Company</p>
+                            <h3 class="white">25+</h3>
+                            <p class="white">years Of Experience</p>
+                        </div>
+                        <div class="about__img__vr">
+                            <img src="assets/images/about2.jpg" alt="about">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Home About section end -->
+
+        <!-- Home Service section -->
+
+        <section class="services" id="services">
+            <div class="container">
+                <div class="section-head">
+                    <div class="title-top">
+                        <img src="assets/images/icons/heart-pulse-rate.png" alt="">
+                        <p class="sec-color">Our Services</p>
+                        <img src="assets/images/icons/heart-pulse-rate.png" alt="">
+                    </div>
+                    <h2 class="title">How can we help you?</h2>
+                </div>
+                <div class="services__div">
+                    <div class="card service__card">
+                        <div class="card__head">
+                            <p class="card__title">Digital Marketing</p>
+                            <div class="card__action">
+                                +
+                            </div>
+                        </div>
+                        <div class="card__body">
+                            <div class="desc">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eos asperiores
+                                    voluptatem nostrum culpa. </p>
+                            </div>
+                        </div>
+                        <div class="card__footer">
+                            <img src="assets/images/service1.jpg" alt="digital-marketing">
+                        </div>
+                    </div>
+                    <div class="card service__card">
+                        <div class="card__head">
+                            <p class="card__title">Digital Marketing</p>
+                            <div class="card__action">
+                                +
+                            </div>
+                        </div>
+                        <div class="card__body">
+                            <div class="desc">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eos asperiores
+                                    voluptatem nostrum culpa. </p>
+                            </div>
+                        </div>
+                        <div class="card__footer">
+                            <img src="assets/images/service2.jpg" alt="digital-marketing">
+                        </div>
+                    </div>
+                    <div class="card service__card">
+                        <div class="card__head">
+                            <p class="card__title">Digital Marketing</p>
+                            <div class="card__action">
+                                +
+                            </div>
+                        </div>
+                        <div class="card__body">
+                            <div class="desc">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eos asperiores
+                                    voluptatem nostrum culpa. </p>
+                            </div>
+                        </div>
+                        <div class="card__footer">
+                            <img src="assets/images/service3.jpg" alt="digital-marketing">
+                        </div>
+                    </div>
+                    <div class="card service__card">
+                        <div class="card__head">
+                            <p class="card__title">Digital Marketing</p>
+                            <div class="card__action">
+                                +
+                            </div>
+                        </div>
+                        <div class="card__body">
+                            <div class="desc">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eos asperiores
+                                    voluptatem nostrum culpa. </p>
+                            </div>
+                        </div>
+                        <div class="card__footer">
+                            <img src="assets/images/service4.jpg" alt="digital-marketing">
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-outline">Get a Quote <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                        height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                    </svg></button>
+            </div>
+        </section>
+
+        <!-- Home Service section end -->
+
+        <!-- Why Choose Us Section -->
+
+        <section class="why-choose">
+            <div class="container">
+                <div class="why-choose__div">
+                    <div class="why-choose__img">
+                        <div class="imgs-grid">
+                            <div class="img-big">
+                                <img src="assets/images/why1.jpg" alt="why-us">
+                            </div>
+                            <div class="img-med"><img src="assets/images/why2.jpg" alt="why-us"></div>
+                            <div class="img-small">
+                                <img src="assets/images/why3.png" alt="why-us">
+                            </div>
+                        </div>
+                    </div>
+                    <article class="why-choose__content">
+                        <div class="title-top">
+                            <img src="assets/images/icons/heart-pulse-rate.png" alt="">
+                            <p>Why Choose US</p>
+                        </div>
+                        <h2 class="title">35+ Years of delivering custom It solutions services.</h2>
+                        <p class="desc">Bring to the table win-win survival strategies to ensure proactive domination At
+                            the end of the day.</p>
+                        <ul class="why-choose__content__list list-unstyled">
+                            <li>
+                                <div class="icon">
+                                    <img src="assets/images/icons/fr1.png" alt="first-growing-process">
+                                </div>
+                                <div class="list-content">
+                                    <h3 class="pm-color">First Growing Process</h3>
+                                    <p class="list-desc">Bring to the table win-win survival strategies to ensur.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <img src="assets/images/icons/fr2.png" alt="first-growing-process">
+                                </div>
+                                <div class="list-content">
+                                    <h3 class="pm-color">First Growing Process</h3>
+                                    <p class="list-desc">Bring to the table win-win survival strategies to ensur.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <img src="assets/images/icons/fr3.png" alt="first-growing-process">
+                                </div>
+                                <div class="list-content">
+                                    <h3 class="pm-color">First Growing Process</h3>
+                                    <p class="list-desc">Bring to the table win-win survival strategies to ensur.</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <button class="btn btn-outline">Get a Quote <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg></button>
+                    </article>
+                    <div class="why-choose__count">
+                        <h3 class="pm-color">Glimpse of our work and presence</h3>
+                        <div class="counts-div">
+                            <div class="count-card">
+                                <div class="icon">
+                                    <img src="assets/images/icons/count1.png" alt="digital-marketing">
+                                </div>
+                                <article class="content">
+                                    <h4 class="sec-color">4560 +</h4>
+                                    <p class="pm-color">Digital marketing</p>
+                                </article>
+                            </div>
+                            <div class="count-card">
+                                <div class="icon">
+                                    <img src="assets/images/icons/count2.png" alt="digital-marketing">
+                                </div>
+                                <article class="content">
+                                    <h4 class="sec-color">4560 +</h4>
+                                    <p class="pm-color">Digital marketing</p>
+                                </article>
+                            </div>
+                            <div class="count-card">
+                                <div class="icon">
+                                    <img src="assets/images/icons/count3.png" alt="digital-marketing">
+                                </div>
+                                <article class="content">
+                                    <h4 class="sec-color">4560 +</h4>
+                                    <p class="pm-color">Digital marketing</p>
+                                </article>
+                            </div>
+                            <div class="count-card">
+                                <div class="icon">
+                                    <img src="assets/images/icons/count4.png" alt="digital-marketing">
+                                </div>
+                                <article class="content">
+                                    <h4 class="sec-color">4560 +</h4>
+                                    <p class="pm-color">Digital marketing</p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section end --> 
+
+        <!-- Testimonial Section -->
+
+        <section class="testimonials" style="display: none;">
+            <div class="container">
+                <div class="section-head">
+                    <div class="title-top">
+                        <img src="assets/images/icons/heart-pulse-rate.png" alt="">
+                        <p>What is Backend Business Solutions</p>
+                    </div>
+                    <h2 class="title">35+ Years of delivering custom It solutions services.</h2>
+                    <button class="btn btn-outline">View All Testimonials <svg xmlns="http://www.w3.org/2000/svg"
+                            width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                        </svg></button>
+                </div>
+                <div class="testimonials__div">
+                    <div class="swiper testimonialSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide testimonial-slide">
+                                <div class="testimonial">
+                                    <article class="testimonial__content">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere unde nobis
+                                            maiores incidunt? Delectus recusandae exercitationem ullam, necessitatibus
+                                            debitis ea quos distinctio laboriosam, vel totam est voluptate, nostrum iste
+                                            placeat.</p>
+                                    </article>
+                                    <div class="testimonial__footer">
+                                        <div class="auther">
+                                            <div class="auther__img">
+                                                <img src="assets/images/testi-auther.jpg" alt="taylor">
+                                            </div>
+                                            <article class="auther__content">
+                                                <h3 class="auther-name">
+                                                    Taylor Mathew
+                                                </h3>
+                                                <p class="text-muted auther-job">
+                                                    CEO Bribble LLC
+                                                </p>
+                                                <div class="auther-location">
+                                                    <div class="flag">
+                                                        <img src="assets/images/flag.png" alt="spain">
+                                                    </div>
+                                                    <p class="text-mutted">
+                                                        Madrid, Spain
+                                                    </p>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide testimonial-slide">
+                                <div class="testimonial">
+                                    <article class="testimonial__content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere unde nobis
+                                            maiores incidunt? Delectus recusandae exercitationem ullam, necessitatibus
+                                            debitis ea quos distinctio laboriosam, vel totam est voluptate, nostrum iste
+                                            placeat.
+                                        </p>
+                                    </article>
+                                    <div class="testimonial__footer">
+                                        <div class="auther">
+                                            <div class="auther__img">
+                                                <img src="assets/images/testi-auther.jpg" alt="taylor">
+                                            </div>
+                                            <article class="auther__content">
+                                                <h3 class="auther-name">
+                                                    Taylor Mathew
+                                                </h3>
+                                                <p class="text-muted auther-job">
+                                                    CEO Bribble LLC
+                                                </p>
+                                                <div class="auther-location">
+                                                    <div class="flag">
+                                                        <img src="assets/images/flag.png" alt="spain">
+                                                    </div>
+                                                    <p class="text-mutted">
+                                                        Madrid, Spain
+                                                    </p>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide testimonial-slide">
+                                <div class="testimonial">
+                                    <article class="testimonial__content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere unde nobis
+                                            maiores incidunt? Delectus recusandae exercitationem ullam, necessitatibus
+                                            debitis ea quos distinctio laboriosam, vel totam est voluptate, nostrum iste
+                                            placeat.
+                                        </p>
+                                    </article>
+                                    <div class="testimonial__footer">
+                                        <div class="auther">
+                                            <div class="auther__img">
+                                                <img src="assets/images/testi-auther.jpg" alt="taylor">
+                                            </div>
+                                            <article class="auther__content">
+                                                <h3 class="auther-name">
+                                                    Taylor Mathew
+                                                </h3>
+                                                <p class="text-muted auther-job">
+                                                    CEO Bribble LLC
+                                                </p>
+                                                <div class="auther-location">
+                                                    <div class="flag">
+                                                        <img src="assets/images/flag.png" alt="spain">
+                                                    </div>
+                                                    <p class="text-mutted">
+                                                        Madrid, Spain
+                                                    </p>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide testimonial-slide">
+                                <div class="testimonial">
+                                    <article class="testimonial__content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere unde nobis
+                                            maiores incidunt? Delectus recusandae exercitationem ullam, necessitatibus
+                                            debitis ea quos distinctio laboriosam, vel totam est voluptate, nostrum iste
+                                            placeat.
+                                        </p>
+                                    </article>
+                                    <div class="testimonial__footer">
+                                        <div class="auther">
+                                            <div class="auther__img">
+                                                <img src="assets/images/testi-auther.jpg" alt="taylor">
+                                            </div>
+                                            <article class="auther__content">
+                                                <h3 class="auther-name">
+                                                    Taylor Mathew
+                                                </h3>
+                                                <p class="text-muted auther-job">
+                                                    CEO Bribble LLC
+                                                </p>
+                                                <div class="auther-location">
+                                                    <div class="flag">
+                                                        <img src="assets/images/flag.png" alt="spain">
+                                                    </div>
+                                                    <p class="text-mutted">
+                                                        Madrid, Spain
+                                                    </p>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide testimonial-slide">
+                                <div class="testimonial">
+                                    <article class="testimonial__content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere unde nobis
+                                            maiores incidunt? Delectus recusandae exercitationem ullam, necessitatibus
+                                            debitis ea quos distinctio laboriosam, vel totam est voluptate, nostrum iste
+                                            placeat.
+                                        </p>
+                                    </article>
+                                    <div class="testimonial__footer">
+                                        <div class="auther">
+                                            <div class="auther__img">
+                                                <img src="assets/images/testi-auther.jpg" alt="taylor">
+                                            </div>
+                                            <article class="auther__content">
+                                                <h3 class="auther-name">
+                                                    Taylor Mathew
+                                                </h3>
+                                                <p class="text-muted auther-job">
+                                                    CEO Bribble LLC
+                                                </p>
+                                                <div class="auther-location">
+                                                    <div class="flag">
+                                                        <img src="assets/images/flag.png" alt="spain">
+                                                    </div>
+                                                    <p class="text-mutted">
+                                                        Madrid, Spain
+                                                    </p>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide testimonial-slide">
+                                <div class="testimonial">
+                                    <article class="testimonial__content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere unde nobis
+                                            maiores incidunt? Delectus recusandae exercitationem ullam, necessitatibus
+                                            debitis ea quos distinctio laboriosam, vel totam est voluptate, nostrum iste
+                                            placeat.
+                                        </p>
+                                    </article>
+                                    <div class="testimonial__footer">
+                                        <div class="auther">
+                                            <div class="auther__img">
+                                                <img src="assets/images/testi-auther.jpg" alt="taylor">
+                                            </div>
+                                            <article class="auther__content">
+                                                <h3 class="auther-name">
+                                                    Taylor Mathew
+                                                </h3>
+                                                <p class="text-muted auther-job">
+                                                    CEO Bribble LLC
+                                                </p>
+                                                <div class="auther-location">
+                                                    <div class="flag">
+                                                        <img src="assets/images/flag.png" alt="spain">
+                                                    </div>
+                                                    <p class="text-mutted">
+                                                        Madrid, Spain
+                                                    </p>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide testimonial-slide">
+                                <div class="testimonial">
+                                    <article class="testimonial__content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere unde nobis
+                                            maiores incidunt? Delectus recusandae exercitationem ullam, necessitatibus
+                                            debitis ea quos distinctio laboriosam, vel totam est voluptate, nostrum iste
+                                            placeat.
+                                        </p>
+                                    </article>
+                                    <div class="testimonial__footer">
+                                        <div class="auther">
+                                            <div class="auther__img">
+                                                <img src="assets/images/testi-auther.jpg" alt="taylor">
+                                            </div>
+                                            <article class="auther__content">
+                                                <h3 class="auther-name">
+                                                    Taylor Mathew
+                                                </h3>
+                                                <p class="text-muted auther-job">
+                                                    CEO Bribble LLC
+                                                </p>
+                                                <div class="auther-location">
+                                                    <div class="flag">
+                                                        <img src="assets/images/flag.png" alt="spain">
+                                                    </div>
+                                                    <p class="text-mutted">
+                                                        Madrid, Spain
+                                                    </p>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide testimonial-slide">
+                                <div class="testimonial">
+                                    <article class="testimonial__content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere unde nobis
+                                            maiores incidunt? Delectus recusandae exercitationem ullam, necessitatibus
+                                            debitis ea quos distinctio laboriosam, vel totam est voluptate, nostrum iste
+                                            placeat.
+                                        </p>
+                                    </article>
+                                    <div class="testimonial__footer">
+                                        <div class="auther">
+                                            <div class="auther__img">
+                                                <img src="assets/images/testi-auther.jpg" alt="taylor">
+                                            </div>
+                                            <article class="auther__content">
+                                                <h3 class="auther-name">
+                                                    Taylor Mathew
+                                                </h3>
+                                                <p class="text-muted auther-job">
+                                                    CEO Bribble LLC
+                                                </p>
+                                                <div class="auther-location">
+                                                    <div class="flag">
+                                                        <img src="assets/images/flag.png" alt="spain">
+                                                    </div>
+                                                    <p class="text-mutted">
+                                                        Madrid, Spain
+                                                    </p>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide testimonial-slide">
+                                <div class="testimonial">
+                                    <article class="testimonial__content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere unde nobis
+                                            maiores incidunt? Delectus recusandae exercitationem ullam, necessitatibus
+                                            debitis ea quos distinctio laboriosam, vel totam est voluptate, nostrum iste
+                                            placeat.
+                                        </p>
+                                    </article>
+                                    <div class="testimonial__footer">
+                                        <div class="auther">
+                                            <div class="auther__img">
+                                                <img src="assets/images/testi-auther.jpg" alt="taylor">
+                                            </div>
+                                            <article class="auther__content">
+                                                <h3 class="auther-name">
+                                                    Taylor Mathew
+                                                </h3>
+                                                <p class="text-muted auther-job">
+                                                    CEO Bribble LLC
+                                                </p>
+                                                <div class="auther-location">
+                                                    <div class="flag">
+                                                        <img src="assets/images/flag.png" alt="spain">
+                                                    </div>
+                                                    <p class="text-mutted">
+                                                        Madrid, Spain
+                                                    </p>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- testing slider -->
+        <section class="testimonials">
+            <div class="container">
+                <div class="section-head">
+                 <div>
+                    <div class="title-top">
+                        <img src="assets/images/icons/heart-pulse-rate.png" alt="">
+                        <p>What is Backend Business Solutions</p>
+                    </div>
+                    <h2 class="title">35+ Years of delivering custom It solutions services.</h2>
+                 </div>
+                    <button class="btn btn-outline">View All Testimonials <svg xmlns="http://www.w3.org/2000/svg"
+                            width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                        </svg></button>
+                </div>
+                <div class="testimonials__div">
+                    <div class="swiper testimonialSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide testimonial-slide">
+                                <div class="testimonial">
+                                    <article class="testimonial__content">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere unde nobis
+                                            maiores incidunt? Delectus recusandae exercitationem ullam, necessitatibus
+                                            debitis ea quos distinctio laboriosam, vel totam est voluptate, nostrum iste
+                                            placeat.</p>
+                                    </article>
+                                    <div class="testimonial__footer">
+                                        <div class="auther">
+                                            <div class="auther__img">
+                                                <img src="assets/images/testi-auther.jpg" alt="taylor">
+                                            </div>
+                                            <article class="auther__content">
+                                                <h3 class="auther-name">
+                                                    Taylor Mathew
+                                                </h3>
+                                                <p class="text-muted auther-job">
+                                                    CEO Bribble LLC
+                                                </p>
+                                                <div class="auther-location">
+                                                    <div class="flag">
+                                                        <img src="assets/images/flag.png" alt="spain">
+                                                    </div>
+                                                    <p class="text-mutted">
+                                                        Madrid, Spain
+                                                    </p>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide testimonial-slide">
+                                <div class="testimonial">
+                                    <article class="testimonial__content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere unde nobis
+                                            maiores incidunt? Delectus recusandae exercitationem ullam, necessitatibus
+                                            debitis ea quos distinctio laboriosam, vel totam est voluptate, nostrum iste
+                                            placeat.
+                                        </p>
+                                    </article>
+                                    <div class="testimonial__footer">
+                                        <div class="auther">
+                                            <div class="auther__img">
+                                                <img src="assets/images/testi-auther.jpg" alt="taylor">
+                                            </div>
+                                            <article class="auther__content">
+                                                <h3 class="auther-name">
+                                                    Taylor Mathew
+                                                </h3>
+                                                <p class="text-muted auther-job">
+                                                    CEO Bribble LLC
+                                                </p>
+                                                <div class="auther-location">
+                                                    <div class="flag">
+                                                        <img src="assets/images/flag.png" alt="spain">
+                                                    </div>
+                                                    <p class="text-mutted">
+                                                        Madrid, Spain
+                                                    </p>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide testimonial-slide">
+                                <div class="testimonial">
+                                    <article class="testimonial__content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere unde nobis
+                                            maiores incidunt? Delectus recusandae exercitationem ullam, necessitatibus
+                                            debitis ea quos distinctio laboriosam, vel totam est voluptate, nostrum iste
+                                            placeat.
+                                        </p>
+                                    </article>
+                                    <div class="testimonial__footer">
+                                        <div class="auther">
+                                            <div class="auther__img">
+                                                <img src="assets/images/testi-auther.jpg" alt="taylor">
+                                            </div>
+                                            <article class="auther__content">
+                                                <h3 class="auther-name">
+                                                    Taylor Mathew
+                                                </h3>
+                                                <p class="text-muted auther-job">
+                                                    CEO Bribble LLC
+                                                </p>
+                                                <div class="auther-location">
+                                                    <div class="flag">
+                                                        <img src="assets/images/flag.png" alt="spain">
+                                                    </div>
+                                                    <p class="text-mutted">
+                                                        Madrid, Spain
+                                                    </p>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide testimonial-slide">
+                                <div class="testimonial">
+                                    <article class="testimonial__content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere unde nobis
+                                            maiores incidunt? Delectus recusandae exercitationem ullam, necessitatibus
+                                            debitis ea quos distinctio laboriosam, vel totam est voluptate, nostrum iste
+                                            placeat.
+                                        </p>
+                                    </article>
+                                    <div class="testimonial__footer">
+                                        <div class="auther">
+                                            <div class="auther__img">
+                                                <img src="assets/images/testi-auther.jpg" alt="taylor">
+                                            </div>
+                                            <article class="auther__content">
+                                                <h3 class="auther-name">
+                                                    Taylor Mathew
+                                                </h3>
+                                                <p class="text-muted auther-job">
+                                                    CEO Bribble LLC
+                                                </p>
+                                                <div class="auther-location">
+                                                    <div class="flag">
+                                                        <img src="assets/images/flag.png" alt="spain">
+                                                    </div>
+                                                    <p class="text-mutted">
+                                                        Madrid, Spain
+                                                    </p>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide testimonial-slide">
+                                <div class="testimonial">
+                                    <article class="testimonial__content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere unde nobis
+                                            maiores incidunt? Delectus recusandae exercitationem ullam, necessitatibus
+                                            debitis ea quos distinctio laboriosam, vel totam est voluptate, nostrum iste
+                                            placeat.
+                                        </p>
+                                    </article>
+                                    <div class="testimonial__footer">
+                                        <div class="auther">
+                                            <div class="auther__img">
+                                                <img src="assets/images/testi-auther.jpg" alt="taylor">
+                                            </div>
+                                            <article class="auther__content">
+                                                <h3 class="auther-name">
+                                                    Taylor Mathew
+                                                </h3>
+                                                <p class="text-muted auther-job">
+                                                    CEO Bribble LLC
+                                                </p>
+                                                <div class="auther-location">
+                                                    <div class="flag">
+                                                        <img src="assets/images/flag.png" alt="spain">
+                                                    </div>
+                                                    <p class="text-mutted">
+                                                        Madrid, Spain
+                                                    </p>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide testimonial-slide">
+                                <div class="testimonial">
+                                    <article class="testimonial__content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere unde nobis
+                                            maiores incidunt? Delectus recusandae exercitationem ullam, necessitatibus
+                                            debitis ea quos distinctio laboriosam, vel totam est voluptate, nostrum iste
+                                            placeat.
+                                        </p>
+                                    </article>
+                                    <div class="testimonial__footer">
+                                        <div class="auther">
+                                            <div class="auther__img">
+                                                <img src="assets/images/testi-auther.jpg" alt="taylor">
+                                            </div>
+                                            <article class="auther__content">
+                                                <h3 class="auther-name">
+                                                    Taylor Mathew
+                                                </h3>
+                                                <p class="text-muted auther-job">
+                                                    CEO Bribble LLC
+                                                </p>
+                                                <div class="auther-location">
+                                                    <div class="flag">
+                                                        <img src="assets/images/flag.png" alt="spain">
+                                                    </div>
+                                                    <p class="text-mutted">
+                                                        Madrid, Spain
+                                                    </p>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide testimonial-slide">
+                                <div class="testimonial">
+                                    <article class="testimonial__content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere unde nobis
+                                            maiores incidunt? Delectus recusandae exercitationem ullam, necessitatibus
+                                            debitis ea quos distinctio laboriosam, vel totam est voluptate, nostrum iste
+                                            placeat.
+                                        </p>
+                                    </article>
+                                    <div class="testimonial__footer">
+                                        <div class="auther">
+                                            <div class="auther__img">
+                                                <img src="assets/images/testi-auther.jpg" alt="taylor">
+                                            </div>
+                                            <article class="auther__content">
+                                                <h3 class="auther-name">
+                                                    Taylor Mathew
+                                                </h3>
+                                                <p class="text-muted auther-job">
+                                                    CEO Bribble LLC
+                                                </p>
+                                                <div class="auther-location">
+                                                    <div class="flag">
+                                                        <img src="assets/images/flag.png" alt="spain">
+                                                    </div>
+                                                    <p class="text-mutted">
+                                                        Madrid, Spain
+                                                    </p>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide testimonial-slide">
+                                <div class="testimonial">
+                                    <article class="testimonial__content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere unde nobis
+                                            maiores incidunt? Delectus recusandae exercitationem ullam, necessitatibus
+                                            debitis ea quos distinctio laboriosam, vel totam est voluptate, nostrum iste
+                                            placeat.
+                                        </p>
+                                    </article>
+                                    <div class="testimonial__footer">
+                                        <div class="auther">
+                                            <div class="auther__img">
+                                                <img src="assets/images/testi-auther.jpg" alt="taylor">
+                                            </div>
+                                            <article class="auther__content">
+                                                <h3 class="auther-name">
+                                                    Taylor Mathew
+                                                </h3>
+                                                <p class="text-muted auther-job">
+                                                    CEO Bribble LLC
+                                                </p>
+                                                <div class="auther-location">
+                                                    <div class="flag">
+                                                        <img src="assets/images/flag.png" alt="spain">
+                                                    </div>
+                                                    <p class="text-mutted">
+                                                        Madrid, Spain
+                                                    </p>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide testimonial-slide">
+                                <div class="testimonial">
+                                    <article class="testimonial__content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere unde nobis
+                                            maiores incidunt? Delectus recusandae exercitationem ullam, necessitatibus
+                                            debitis ea quos distinctio laboriosam, vel totam est voluptate, nostrum iste
+                                            placeat.
+                                        </p>
+                                    </article>
+                                    <div class="testimonial__footer">
+                                        <div class="auther">
+                                            <div class="auther__img">
+                                                <img src="assets/images/testi-auther.jpg" alt="taylor">
+                                            </div>
+                                            <article class="auther__content">
+                                                <h3 class="auther-name">
+                                                    Taylor Mathew
+                                                </h3>
+                                                <p class="text-muted auther-job">
+                                                    CEO Bribble LLC
+                                                </p>
+                                                <div class="auther-location">
+                                                    <div class="flag">
+                                                        <img src="assets/images/flag.png" alt="spain">
+                                                    </div>
+                                                    <p class="text-mutted">
+                                                        Madrid, Spain
+                                                    </p>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- testing slider -->
+
+        <!-- Testimonial Section end -->
+
+        <!-- recent work section -->
+        <section class="recent-works">
+            <div class="container">
+                <div class="section-head">
+                    <div class="title-top">
+                        <img src="assets/images/icons/heart-pulse-rate.png" alt="">
+                        <p class="sec-color">Recently Completed Work</p>
+                        <img src="assets/images/icons/heart-pulse-rate.png" alt="">
+                    </div>
+                    <h2 class="title">Latest projects from our
+                        (Backend) team</h2>
+                </div>
+                <div class="recent-works__div">
+                    <div class="work">
+                        <div class="work__img" style="background-image: url('assets/images/work1.jpg');">
+                            <div class="logo-icon">
+                                <img src="assets/images/logo-icon.png" alt="logo-icon">
+                            </div>
+                        </div>
+                        <article class="work__content">
+                            <h3>Infrastructure Upgrade</h3>
+                            <div class="work__tags">
+                                <div class="tag">
+                                    <p>Design</p>
+                                </div>
+                                <div class="tag">
+                                    <p>Idea</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="work">
+                        <div class="work__img" style="background-image: url('assets/images/work1.jpg');">
+                            <div class="logo-icon">
+                                <img src="assets/images/logo-icon.png" alt="logo-icon">
+                            </div>
+                        </div>
+                        <article class="work__content">
+                            <h3>Infrastructure Upgrade</h3>
+                            <div class="work__tags">
+                                <div class="tag">
+                                    <p>Design</p>
+                                </div>
+                                <div class="tag">
+                                    <p>Idea</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="work">
+                        <div class="work__img" style="background-image: url('assets/images/work1.jpg');">
+                            <div class="logo-icon">
+                                <img src="assets/images/logo-icon.png" alt="logo-icon">
+                            </div>
+                        </div>
+                        <article class="work__content">
+                            <h3>Infrastructure Upgrade</h3>
+                            <div class="work__tags">
+                                <div class="tag">
+                                    <p>Design</p>
+                                </div>
+                                <div class="tag">
+                                    <p>Idea</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="work">
+                        <div class="work__img" style="background-image: url('assets/images/work1.jpg');">
+                            <div class="logo-icon">
+                                <img src="assets/images/logo-icon.png" alt="logo-icon">
+                            </div>
+                        </div>
+                        <article class="work__content">
+                            <h3>Infrastructure Upgrade</h3>
+                            <div class="work__tags">
+                                <div class="tag">
+                                    <p>Design</p>
+                                </div>
+                                <div class="tag">
+                                    <p>Idea</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="work">
+                        <div class="work__img" style="background-image: url('assets/images/work1.jpg');">
+                            <div class="logo-icon">
+                                <img src="assets/images/logo-icon.png" alt="logo-icon">
+                            </div>
+                        </div>
+                        <article class="work__content">
+                            <h3>Infrastructure Upgrade</h3>
+                            <div class="work__tags">
+                                <div class="tag">
+                                    <p>Design</p>
+                                </div>
+                                <div class="tag">
+                                    <p>Idea</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="work">
+                        <div class="work__img" style="background-image: url('assets/images/work1.jpg');">
+                            <div class="logo-icon">
+                                <img src="assets/images/logo-icon.png" alt="logo-icon">
+                            </div>
+                        </div>
+                        <article class="work__content">
+                            <h3>Infrastructure Upgrade</h3>
+                            <div class="work__tags">
+                                <div class="tag">
+                                    <p>Design</p>
+                                </div>
+                                <div class="tag">
+                                    <p>Idea</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- recent work section end -->
+
+        <!-- working process -->
+
+        <section class="working-process">
+            <div class="container">
+                <div class="section-head">
+                    <div class="title-top">
+                        <img src="assets/images/icons/heart-pulse-rate.png" alt="">
+                        <p class="sec-color">Working Process</p>
+                        <img src="assets/images/icons/heart-pulse-rate.png" alt="">
+                    </div>
+                    <h2 class="title">Our Software Development Process</h2>
+                </div>
+                <div class="working-process__div">
+                    <div class="process-card">
+                        <div class="card-head" style="background-image: url('assets/images/process1.png');">
+                            <div class="img-circle" data-number="1">
+                                <img src="assets/images/arc-bottom.png" alt="discovery">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="pm-color">Discovery</h3>
+                            <p>Podcasting operational change management inside of workflows</p>
+                        </div>
+                    </div>
+                    <div class="process-card">
+                        <div class="card-head" style="background-image: url('assets/images/process2.png');">
+                            <div class="img-circle" data-number="2">
+                                <img src="assets/images/arc-top.png" alt="discovery">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="pm-color">Product Designing</h3>
+                            <p>Podcasting operational change management inside of workflows</p>
+                        </div>
+                    </div>
+                    <div class="process-card">
+                        <div class="card-head" style="background-image: url('assets/images/process3.png');">
+                            <div class="img-circle" data-number="3">
+                                <img src="assets/images/arc-bottom.png" alt="discovery">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="pm-color">Custom Solutions</h3>
+                            <p>Podcasting operational change management inside of workflows</p>
+                        </div>
+                    </div>
+                    <div class="process-card">
+                        <div class="card-head" style="background-image: url('assets/images/process4.png');">
+                            <div class="img-circle" data-number="4">
+                                <img src="assets/images/arc-top.png" alt="discovery">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="pm-color">Our Success</h3>
+                            <p>Podcasting operational change management inside of workflows</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- working process end -->
+
+        <!-- Dummy Section  -->
+
+        <section class="dummy">
+            <div class="container">
+                <div class="section-head">
+                    <div class="title-top">
+                        <img src="assets/images/icons/heart-pulse-rate.png" alt="">
+                        <p class="sec-color">Lorem, ipsum.</p>
+                        <img src="assets/images/icons/heart-pulse-rate.png" alt="">
+                    </div>
+                    <h2 class="title">Our Software Development Process</h2>
+
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias quisquam adipisci voluptatum hic
+                        culpa deleniti sed mollitia dicta maxime laborum nisi expedita quod illum, saepe eum
+                        perspiciatis deserunt, dolores eos.
+                        Quos molestias tempore enim doloribus excepturi ullam facilis veritatis officia dolore incidunt
+                        veniam, dolor sit accusantium voluptas? Dicta quidem, natus excepturi pariatur reprehenderit
+                        cupiditate, distinctio accusamus quasi autem dolores ad!
+                        Cupiditate ut amet eligendi, dolor fugit, nesciunt praesentium rem distinctio quasi aliquam,
+                        earum architecto culpa adipisci incidunt cum. Illum repudiandae nulla cupiditate architecto
+                        dolorum debitis repellendus odit, ratione deserunt ipsam!
+                        Magni distinctio animi quos suscipit enim impedit, sint ut qui hic voluptas facilis optio ipsa
+                        pariatur deleniti modi commodi officiis? Minima repellat ipsa voluptate expedita, perferendis
+                        quasi dicta ipsam corporis!rem distinctio quasi aliquam, earum architecto culpa adipisci
+                        incidunt cum. Illum repudiandae nulla cupiditate architecto dolorum debitis repellendus odit,
+                        ratione deserunt ipsam!
+                        Magni distinctio animi quos suscipit enim impedit, sint ut qui hic voluptas facilis optio ipsa
+                        pariatur deleniti modi commodi officiis? Minima repellat ipsa voluptate expedita, perferendis
+                        quasi dicta ipsam corporis!
+
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dummy Section end -->
+
+        <!-- Short bnr -->
+
+        <section class="short-banner" style="background-image: url(assets/images/cta-section-bnr.jpg);">
+            <div class="container">
+                <div class="short-banner__div">
+                    <h2 class="white">Let's Create Big Stories Together</h2>
+                    <p class="white">Mobile is in our nerves. We don't just build apps, we create brand. Chooseing us
+                        will be your best decision.</p>
+
+                    <button class="btn btn-outline lite">Get a Quote <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                        </svg></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Short bnr end -->
+
+        <!-- Recent news section -->
+
+        <section class="recent-news">
+            <div class="container">
+                <div class="section-head">
+                    <div class="title-top">
+                        <img src="assets/images/icons/heart-pulse-rate.png" alt="">
+                        <p class="sec-color">Recent News</p>
+                        <img src="assets/images/icons/heart-pulse-rate.png" alt="">
+                    </div>
+                    <h2 class="title">Latest post from our (Dozit)</h2>
+                </div>
+                <div class="recent-news__div">
+                    <div class="news-card">
+                        <div class="news-card__head" style="background-image: url(assets/images/news-img.jpg);">
+                            <div class="news-category">
+                                <div class="tag-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-tag-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M2 1a1 1 0 0 0-1 1v4.586a1 1 0 0 0 .293.707l7 7a1 1 0 0 0 1.414 0l4.586-4.586a1 1 0 0 0 0-1.414l-7-7A1 1 0 0 0 6.586 1H2zm4 3.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+                                    </svg>
+                                </div>
+                                <p>Technology</p>
+                            </div>
+                        </div>
+                        <article class="card-content">
+                            <div class="news-card__meta">
+                                <ul class="news-meta-data-list list-unstyled">
+                                    <li>
+                                        <div class="meta-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+                                            </svg>
+                                        </div>
+                                        <p>Posted By - Backend</p>
+                                    </li>
+                                    <li>
+                                        <div class="meta-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-calendar" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                                            </svg>
+                                        </div>
+                                        <time datetime="2023-03-16">16/03/2023</time>
+                                    </li>
+                                </ul>
+                            </div>
+                            <article class="news-card__body">
+                                <h3 class="news-title pm-color">10 Top Machine Learning Platforms in 2023</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam laudantium cum, a,
+                                    est lorem ipsum obcaecati... </p>
+                            </article>
+                            <div class="news-card__footer">
+                                <a href="/" class="pm-color fw-bold">Read More</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="news-card">
+                        <div class="news-card__head" style="background-image: url(assets/images/news-img.jpg);">
+                            <div class="news-category">
+                                <div class="tag-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-tag-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M2 1a1 1 0 0 0-1 1v4.586a1 1 0 0 0 .293.707l7 7a1 1 0 0 0 1.414 0l4.586-4.586a1 1 0 0 0 0-1.414l-7-7A1 1 0 0 0 6.586 1H2zm4 3.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+                                    </svg>
+                                </div>
+                                <p>Technology</p>
+                            </div>
+                        </div>
+                        <article class="card-content">
+                            <div class="news-card__meta">
+                                <ul class="news-meta-data-list list-unstyled">
+                                    <li>
+                                        <div class="meta-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+                                            </svg>
+                                        </div>
+                                        <p>Posted By - Backend</p>
+                                    </li>
+                                    <li>
+                                        <div class="meta-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-calendar" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                                            </svg>
+                                        </div>
+                                        <time datetime="2023-03-16">16/03/2023</time>
+                                    </li>
+                                </ul>
+                            </div>
+                            <article class="news-card__body">
+                                <h3 class="news-title pm-color">2 Top Machine Learning Platforms in 2023</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam laudantium cum, a,
+                                    est lorem ipsum obcaecati... </p>
+                            </article>
+                            <div class="news-card__footer">
+                                <a href="/" class="pm-color fw-bold">Read More</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="news-card">
+                        <div class="news-card__head" style="background-image: url(assets/images/news-img.jpg);">
+                            <div class="news-category">
+                                <div class="tag-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-tag-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M2 1a1 1 0 0 0-1 1v4.586a1 1 0 0 0 .293.707l7 7a1 1 0 0 0 1.414 0l4.586-4.586a1 1 0 0 0 0-1.414l-7-7A1 1 0 0 0 6.586 1H2zm4 3.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+                                    </svg>
+                                </div>
+                                <p>Technology</p>
+                            </div>
+                        </div>
+                        <article class="card-content">
+                            <div class="news-card__meta">
+                                <ul class="news-meta-data-list list-unstyled">
+                                    <li>
+                                        <div class="meta-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+                                            </svg>
+                                        </div>
+                                        <p>Posted By - Backend</p>
+                                    </li>
+                                    <li>
+                                        <div class="meta-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-calendar" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                                            </svg>
+                                        </div>
+                                        <time datetime="2023-03-16">16/03/2023</time>
+                                    </li>
+                                </ul>
+                            </div>
+                            <article class="news-card__body">
+                                <h3 class="news-title pm-color">3 Top Machine Learning Platforms in 2023</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam laudantium cum, a,
+                                    est lorem ipsum obcaecati... </p>
+                            </article>
+                            <div class="news-card__footer">
+                                <a href="/" class="pm-color fw-bold">Read More</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recent news section end -->
+
+        <!-- Faq section -->
+
+        <section class="faq" id="contact-us">
+
+            <div class="faq__div">
+
+                <div class="faq__form" style="background-image: url(assets/images/form-bg.jpg)">
+                    <div class="faq__form-div">
+                        <div class="title-top">
+                            <img src="assets/images/icons/heart-pulse-rate.png" alt="contact-us">
+                            <p>Contact Us</p>
+                        </div>
+                        <h2 class="white">Speak to an Expert</h2>
+                        <form>
+                            <div class="input-group">
+                                <input type="text" name="name" id="name" placeholder="Your Name">
+                                <input type="email" name="email" id="email" placeholder="Your Email">
+                            </div>
+                            <div class="input-group">
+                                <input type="text" name="topic" id="topic" placeholder="Your Topic">
+                                <input type="phone" name="phone" id="phone" placeholder="Your Phone">
+                            </div>
+                            <textarea name="Message" id="Message" cols="30" rows="10" placeholder="Message"></textarea>
+                            <input type="submit" value="Send Message" class="btn btn-secondary">
+                        </form>
+                    </div>
+                </div>
+
+                <div class="faq__accordion">
+                    <div class="title-top">
+                        <img src="assets/images/icons/heart-pulse-rate.png" alt="contact-us">
+                        <p>FAQ</p>
+                    </div>
+                    <!-- <h2>Frequently Asked Questions</h2> -->
+                    <div class="acc">
+                        <div class="accordion__content">
+                            <h2>Accordion FAQ</h2>
+
+                            <div class="accordion__item ">
+                                <header class="item__header">
+                                    <h4 class="item__question">
+                                        01. How to use Backend?
+                                    </h4>
+                                    <div class="item__icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                        </svg>
+                                    </div>
+                                </header>
+                                <div class="item__content">
+                                    <p class="item__answer">
+                                        Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordion__item">
+                                <header class="item__header">
+                                    <h4 class="item__question">
+                                        02. How to soft launch your business?
+                                    </h4>
+                                    <div class="item__icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                        </svg>
+                                    </div>
+                                </header>
+                                <div class="item__content">
+                                    <p class="item__answer">
+                                        Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordion__item">
+                                <header class="item__header">
+                                    <h4 class="item__question">
+                                        03. How to turn visitors into contributors?
+                                    </h4>
+                                    <div class="item__icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                        </svg>
+                                    </div>
+                                </header>
+                                <div class="item__content">
+                                    <p class="item__answer">
+                                        Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordion__item">
+                                <header class="item__header">
+                                    <h4 class="item__question">
+                                        04.How to soft launch your business?
+                                    </h4>
+                                    <div class="item__icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                        </svg>
+                                    </div>
+                                </header>
+                                <div class="item__content">
+                                    <p class="item__answer">
+                                        Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-outline">Get a Quote <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                        </svg></button>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Faq section end -->
+
+
+        <!-- Brand Carousel Section -->
+
+        <section class="brands">
+            <div class="container">
+                <div class="brands__title">
+                    <img src="assets/images/icons/heart-pulse-rate.png" alt="brands">
+                    <h2>More than 5K+ Brands with work Backend</h2>
+                    <img src="assets/images/icons/heart-pulse-rate.png" alt="brands">
+
+                </div>
+                <div class="brands__div">
+                    <div class="swiper brandSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="brand-img">
+                                    <img src="assets/images/brands/brand-1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="brand-img">
+                                    <img src="assets/images/brands/brand-2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="brand-img">
+                                    <img src="assets/images/brands/brand-3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="brand-img">
+                                    <img src="assets/images/brands/brand-4.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="brand-img">
+                                    <img src="assets/images/brands/brand-5.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="brand-img">
+                                    <img src="assets/images/brands/brand-1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="brand-img">
+                                    <img src="assets/images/brands/brand-2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="brand-img">
+                                    <img src="assets/images/brands/brand-3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="brand-img">
+                                    <img src="assets/images/brands/brand-4.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="brand-img">
+                                    <img src="assets/images/brands/brand-5.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="swiper-pagination"></div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brand Carousel Section end -->
+
+
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="news-letter-card">
+                    <h2 class="white">Subscribe to our newsletter for latest update.</h2>
+                    <form class="news-letter-form">
+                        <input type="email" name="email" id="user-email" placeholder="Your email address">
+                        <button class="btn btn-outline">Subscribe<svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg></button>
+                    </form>
+                </div>
+                <div class="footer__div">
+                    <div class="footer__card">
+                        <h3 class="footer-title">
+                            Main Branch
+                        </h3>
+                        <div class="footer__branch">
+                            <article class="branch-desc">
+                                <p>Podcasting operational change management inside of work flows to establish a framework.</p>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <div class="icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                                              </svg>
+                                        </div>
+                                        <a href="tel:+15878159311">+1 587 815 9311</a>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                                                <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+                                              </svg>
+                                        </div>
+                                        <a href="mailto:+15878159311">info@backendbusinesssolutions.com</a>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                                              </svg>
+                                        </div>
+                                        <p>40/3545, Kuttiparambu Lane -454654</p>
+                                    </li>
+                                </ul>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="footer__card">
+                        <h3 class="footer-title">
+                            Main Branch
+                        </h3>
+                        <div class="footer__branch">
+                            <article class="branch-desc">
+                                <p>Podcasting operational change management inside of work flows to establish a framework.</p>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <div class="icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                                              </svg>
+                                        </div>
+                                        <a href="tel:+15878159311">+1 587 815 9311</a>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                                                <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+                                              </svg>
+                                        </div>
+                                        <a href="mailto:+15878159311">info@backendbusinesssolutions.com</a>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                                              </svg>
+                                        </div>
+                                        <p>40/3545, Kuttiparambu Lane -454654</p>
+                                    </li>
+                                </ul>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="footer__card">
+                        <h3 class="footer-title">
+                            Main Branch
+                        </h3>
+                        <div class="footer__branch">
+                            
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="/">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="/">About</a>
+                                    </li>
+                                    <li>
+                                       <a href="/">Contact Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="/">Terms of service</a>
+                                    </li>
+                                    <li>
+                                        <a href="/">Privacy policy</a>
+                                    </li>
+                                </ul>
+                            
+                        </div>
+                    </div>
+                    <div class="footer__card">
+                        <h3 class="footer-title">
+                            Main Branch
+                        </h3>
+                        <div class="footer__branch">
+                            
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="/">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="/">About</a>
+                                    </li>
+                                    <li>
+                                       <a href="/">Contact Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="/">Terms of service</a>
+                                    </li>
+                                    <li>
+                                        <a href="/">Privacy policy</a>
+                                    </li>
+                                </ul>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__copyright">
+                    <div class="social-icons">
+                        <ul class="list-unstyled">
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-facebook" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                                </svg></li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-twitter" viewBox="0 0 16 16">
+                                    <path
+                                        d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                                </svg>
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-linkedin" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                                </svg>
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-pinterest" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0z" />
+                                </svg>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-logo">
+                        <img src="assets/images/logo-footer.png" alt="logo">
+                    </div>
+                    <article class="credit">
+                        <a href="/">Designed by Backend Business Solutions</a>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="assets/js/home.js"></script>
+</body>
+
+</html>
