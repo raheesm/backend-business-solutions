@@ -69,7 +69,10 @@
             border: none;
             border-bottom: 1px solid;
             padding-bottom: 0.5em;
-            font-size: 1rem;
+            font-size: 0.8rem;
+            @include breakpoint-up(medium){
+                font-size: 1rem;
+            }
         }
         button {
             border: 1px solid $lit-border-color;
