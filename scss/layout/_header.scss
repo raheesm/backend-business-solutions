@@ -4,14 +4,14 @@
   padding-right:1em;
   font-family: $pm-font;
   background-color: #fff;
+  position: fixed;
+  z-index: 999;
   @include breakpoint-up(medium){
     padding-right: 1em;
     display: grid;
     grid-template-columns: 2fr 10fr;
   }
   @include breakpoint-up(large){
-    position: fixed;
-    z-index: 999;
   }
   .logo{
     // width: 10em;
