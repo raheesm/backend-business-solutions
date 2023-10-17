@@ -102,12 +102,11 @@ document.addEventListener("DOMContentLoaded", function () {
       headerLogo.style.display = ''; // Clear the style
       navbar.style.cssText = ''; // Clear the style
       navbar.classList.remove('mobile-menu');
-      menuBar.classList.remove("fade-in");
-      menuBar.classList.add("fade-out");
+
 
 
     }else{
-      menuBar.classList.add("fade-in")
+   
       menuBar.style.marginLeft='auto'
       headerLogo.style.display='none';
       navbar.style.cssText='display:flex';
