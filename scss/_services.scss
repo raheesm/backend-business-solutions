@@ -1,6 +1,6 @@
 .services {
     background-color: $bg-lit;
-    
+
     .btn {
         margin: 0 auto;
     }
@@ -22,7 +22,7 @@
     }
     .card {
         display: grid;
-        
+
         &__head {
             background-color: $secondary;
             display: flex;
@@ -43,23 +43,31 @@
         }
         &__body {
             padding: 0.8em 0.5em;
+            @include breakpoint-up(medium) {
+                padding: 0.8em;
+            }
+            @include breakpoint-up(large) {
+                padding: 1em;
+            }
+            @include breakpoint-up(xlarge) {
+                padding: 1em 1.5em;
+            }
         }
         &__footer {
             height: 6em;
             overflow: hidden;
             border-radius: 5px;
 
-            @include breakpoint-up(medium){
+            @include breakpoint-up(medium) {
                 height: 7em;
-
-              }
-              @include breakpoint-up(large){
+            }
+            @include breakpoint-up(large) {
                 height: 8em;
-              }
-              @include breakpoint-up(xlarge){
+            }
+            @include breakpoint-up(xlarge) {
                 height: 10em;
-              }
-            
+            }
+
             img {
                 width: 100%;
                 height: 100%;
