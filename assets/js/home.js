@@ -117,7 +117,7 @@ document.addEventListener("DOMContentLoaded", function () {
     
     isMenuOpen = !isMenuOpen; 
   })
-  navLink.forEach(item=()=>{
+  navLink.forEach(item=>{
     item.addEventListener('click',()=>{
       menuBar.style.marginLeft = ''; // Clear the style
       headerLogo.style.display = ''; // Clear the style
