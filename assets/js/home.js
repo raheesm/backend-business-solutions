@@ -94,6 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const menuBar = document.getElementById('menu-bar');
   const navbar = document.querySelector('.navbar');
   const headerLogo = document.querySelector('.header .logo');
+  const navLink = document.querySelectorAll('.nav-link')
   let isMenuOpen = false;
   menuBar.addEventListener('click',()=>{
     if (isMenuOpen) {
@@ -111,6 +112,16 @@ document.addEventListener("DOMContentLoaded", function () {
       headerLogo.style.display='none';
       navbar.style.cssText='display:flex';
       navbar.classList.toggle('mobile-menu');
+
     }
+    
     isMenuOpen = !isMenuOpen; 
+  })
+  navLink.forEach(item=()=>{
+    item.addEventListener('click',()=>{
+      menuBar.style.marginLeft = ''; // Clear the style
+      headerLogo.style.display = ''; // Clear the style
+      navbar.style.cssText = ''; // Clear the style
+      navbar.classList.remove('mobile-menu');
+    })
   })
